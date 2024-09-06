@@ -1,0 +1,23 @@
+PowerShell Logging and Pseudo-GUI
+==================================
+
+Работает с PS7.x
+
+Установка
+---------
+1. Скопируйте файл `shist.ps1` в:
+   C:\Users\<Ваш пользователь>\Documents\PowerShell\shist\shist.ps1
+
+2. Проверьте или создайте папку профиля:
+   C:\Users\<Ваш пользователь>\Documents\PowerShell\
+
+3. Проверьте или создайте файл профиля:
+   if (-not (Test-Path "$PROFILE")) {
+       New-Item -ItemType File -Path "$PROFILE" -Force
+   }
+
+4. notepad $PROFILE
+
+5. . "$env:USERPROFILE\Documents\PowerShell\shist\shist.ps1"
+
+6. используйте shist и shistgui
